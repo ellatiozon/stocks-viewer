@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stock Price Viewer</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stockie - Live Stock Tracker</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>📈 Stock Price Viewer</h1>
+    <h1>Stockie</h1>
     <nav>
-      <a href="index.html">Home</a>
+      <a href="index.html" class="active">Home</a>
       <a href="about.html">About</a>
     </nav>
   </header>
 
   <main>
-    <h2>Check Real-Time Stock Prices</h2>
+    <section class="search-section">
+      <h2>Search for a Stock</h2>
+      <form id="stockForm">
+        <input type="text" id="stockSymbol" placeholder="Enter stock symbol (e.g., AAPL)" required />
+        <button type="submit">Search</button>
+      </form>
+      <div id="stockResult" class="stock-result"></div>
+    </section>
 
-    <!-- Submission Form -->
-    <form id="stockForm">
-      <input type="text" id="stockSymbol" placeholder="Enter stock symbol (e.g., AAPL)" required>
-      <button type="submit">Check Price</button>
-    </form>
-
-    <!-- Where the results will appear -->
-    <div id="stockResult"></div>
+    <section class="popular-section">
+      <h2>Popular Stocks</h2>
+      <div id="popularStocksContainer" class="stocks-grid"></div>
+    </section>
   </main>
 
   <footer>
-    <p>© 2025 Stock Viewer Project</p>
+    <p>© 2025 Stockie. Built with Financial Modeling Prep API.</p>
   </footer>
 
   <script src="script.js"></script>
