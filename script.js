@@ -15,7 +15,6 @@ form.addEventListener('submit', async (e) => {
     const response = await fetch(apiUrl);
     const data = await response.json();
 
-    // Check if valid data
     if (data && data.c) {
       const change = data.d;
       const changeColor = change >= 0 ? 'green' : 'red';
@@ -88,4 +87,4 @@ async function loadPopularStocks() {
 }
 
 loadPopularStocks();
-setInterval(loadPopularStocks, 60000); // refresh every 60 seconds
+setInterval(loadPopularStocks, 60000); 

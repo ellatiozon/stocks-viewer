@@ -107,10 +107,14 @@ form button:hover {
 }
 
 /* --- Popular Stocks --- */
-.popular-section h2 {
+.popular-section h2, .popular-section p {
   margin-bottom: 1rem;
   text-align: center;
   color: #333;
+}
+
+.popular-section p{
+  font-style: italic;
 }
 
 .stocks-grid {

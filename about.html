@@ -3,40 +3,73 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About - Stockie</title>
+  <title>About Stockie - Live Stock Tracker</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <h1>Stockie</h1>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html" class="active">About</a>
+      <a href="index.html">Dashboard</a>
+      <a href="about.html" class="active">About Stockie</a>
     </nav>
   </header>
 
-  <main class="about">
-    <h2>About Stockie</h2>
-    <p>
-      Stockie is a simple stock tracking web app that allows users to search for live stock prices
-      and view popular companies at a glance. It integrates the 
-      <a href="https://finnhub.io/" target="_blank">Finhub.io API</a>
-      to fetch real-time market data.
-    </p>
+  <main>
+    <section class="about">
+      <h2>About Stockie</h2>
+      <p>
+        <strong>Stockie</strong> is a simple interactive website designed to help users
+        explore and track live stock prices. It allows users to search for company stocks,
+        view real-time data, and monitor popular companies with a simple and elegant interface.
+      </p>
+      <br />
+      <h2>Purpose</h2>
+      <p>
+        The goal of Stockie is to provide users with an easy-to-use stock monitoring platform that demonstrates 
+        how data from financial APIs can be visualized efficiently. 
+      </p>
+      <br />
+      <h2>Technology Stack</h2>
+      <ul style="margin-left: 1.5rem; line-height: 1.7;">
+        <li><strong>HTML5</strong> – For building the page structure.</li>
+        <li><strong>CSS3</strong> – For responsive and clean design styling.</li>
+        <li><strong>JavaScript (Fetch API)</strong> – For fetching live data dynamically.</li>
+        <li><strong>Finnhub.io API</strong> – For retrieving real-time stock market data.</li>
+        <li><strong>Netlify</strong> – For seamless web deployment and hosting.</li>
+      </ul>
+      <br />
+      <h2>Stock Terminologies</h2>
+      <p>
+        Understanding key stock terms helps interpret the data shown in Stockie. Here’s what each one means:
+      </p>
 
-    <br/>
-
-    <p>
-      This project was built using HTML, CSS, and JavaScript — deployed on Netlify.
-    </p>
-    <br/>
-    <p>
-      Made by Mikhaella Tiozon 😜
-    </p>
+      <div style="margin-top: 1rem;">
+        <ul style="margin-left: 1.5rem; line-height: 1.8;">
+          <li><strong>Price:</strong> The latest trading price of the stock (e.g., <em>$37.74</em>).</li>
+          <li><strong>Change:</strong> The difference between the current and previous closing price. A negative value means the stock decreased in value.</li>
+          <li><strong>High:</strong> The highest price reached during the current trading session.</li>
+          <li><strong>Low:</strong> The lowest price reached during the current trading session.</li>
+          <li><strong>Open:</strong> The price at which the stock started trading when the market opened.</li>
+          <li><strong>Previous Close:</strong> The final trading price from the previous market session.</li>
+        </ul>
+      </div>
+      <br />
+      <h2>Developer</h2>
+      <p>
+        Stockie was created by <strong>Mikhaella Tiozon</strong> 😎 in 2023.
+      </p>
+      <br />
+      <br />
+      <p>
+        For more information about the API, feel free to visit
+        <a href="https://finnhub.io/" target="_blank">Finnhub.io</a>
+      </p>
+    </section>
   </main>
 
   <footer>
-    <p>© 2023 Stockie. All rights reserved.</p>
+    <p>© 2023 Stockie. Built with Finnhub.io API.</p>
   </footer>
 </body>
 </html>
